@@ -1,5 +1,5 @@
 ---
-title: "알고리즘  - 기본 정의와 개념"
+title: "알고리즘 - 기본 정의와 개념"
 date: 2025-11-30 16:00:00 +0900
 categories: [Algorithm Basics, Introduction]
 tags: [algorithm, complexity, big-o, time-complexity, space-complexity]
