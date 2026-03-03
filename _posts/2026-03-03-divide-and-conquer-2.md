@@ -271,8 +271,8 @@ Matrix strassen(const Matrix& A, const Matrix& B) {
 
 int main() {
     // 단위행렬 곱셈 테스트
-    Matrix A = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};
-    Matrix I = {{1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1}};
+    Matrix A = { {1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16} };
+    Matrix I = { {1,0,0,0},{0,1,0,0},{0,0,1,0},{0,0,0,1} };
     Matrix C = strassen(A, I);
     for (auto& row : C) {
         for (auto x : row) cout << x << " ";
@@ -397,7 +397,7 @@ double closestPair(vector<Point>& pts) {
 }
 
 int main() {
-    vector<Point> pts = {{2,3},{12,30},{40,50},{5,1},{12,10},{3,4}};
+    vector<Point> pts = { {2,3},{12,30},{40,50},{5,1},{12,10},{3,4} };
     cout << "최근접 거리: " << closestPair(pts) << "\n"; // 약 1.414
     return 0;
 }
@@ -490,7 +490,7 @@ vector<Point> convexHull(vector<Point> pts) {
 }
 
 int main() {
-    vector<Point> pts = {{0,3},{1,1},{2,2},{4,4},{0,0},{1,2},{3,1},{3,3}};
+    vector<Point> pts = { {0,3},{1,1},{2,2},{4,4},{0,0},{1,2},{3,1},{3,3} };
     vector<Point> hull = convexHull(pts);
 
     cout << "볼록 껍질 꼭짓점 (" << hull.size() << "개):\n";
